@@ -32,8 +32,8 @@ img{
 .text h1{
             font-size: 2.5rem;
             color: #f76d37;
-            margin-top: 90px;
-            margin-bottom: 20px;
+            margin-top: 5.625rem;
+            margin-bottom: 1.25rem;
             text-align: center;
 }
 
@@ -42,7 +42,7 @@ img{
         font-size: 1.15rem;
         color: #262525;
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 3.125rem;
 }
 
 
@@ -50,34 +50,34 @@ img{
 .images {
             display: grid;
             grid-template-columns: repeat(3 ,1fr);
-            gap: 15px;
+            gap: 0.9375rem;
 }
 
 
 .images img{
-                width: 350px;
-                margin-bottom: 15px;
-                border-radius: 4px;
+                width: 21.875rem;
+                margin-bottom: 0.9375rem;
+                border-radius: 0.25rem;
 }
 
 #edit-img{
-            height: 329.91px;
+            height: 20.619375rem;
 }
 
 
 .btn{
-       font-size: 24px;
+       font-size: 1.5rem;
       background-color: #252525;
       color: #ffff;
-      padding: 15px 30px;
-      margin-bottom: 90px;
-      margin-top: 40px;
-      border-radius: 4px;
+      padding: 0.9375rem 1.875rem;
+      margin-bottom: 5.625rem;
+      margin-top: 2.5rem;
+      border-radius: 0.25rem;
       border: none;
       text-align: center;
       display: flex;
       justify-content: center;
-      margin-inline: 470px;
+      margin-inline: 29.375rem;
 
 }
 
@@ -86,4 +86,22 @@ img{
 .btn:hover{
     background-color: #f76d37;
     color: white;
+}
+
+
+
+
+@media(max-width:768px) {
+
+
+            .images {
+                    display: flex;
+                    flex-wrap: wrap;
+            }
+
+            .btn{
+                margin-inline: 0;
+                margin-left: 6.25rem;
+            }
+
 }
