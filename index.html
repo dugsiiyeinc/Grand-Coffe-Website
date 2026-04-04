@@ -32,6 +32,58 @@
       </nav>
     </div>
   </div>
+
+    <!-- BANNER -->
+  <div class="banner" id="banner">
+    <div class="banner-overlay"></div>
+    <div class="container">
+      <div class="banner-content">
+        <h1 class="outstanding-text" id="slideSubTitle">Outstanding</h1>
+        <h1 class="coffee-title" id="slideTitle">Coffee Shop</h1>
+        <p class="banner-text" id="slideText">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        <div class="btn-primary"><a href="#">Learn More</a></div>
+      </div>
+    </div>
+    <div class="slide-dots" id="slideDots">
+      <button class="dot active" onclick="goToSlide(0)"></button>
+      <button class="dot" onclick="goToSlide(1)"></button>
+      <button class="dot" onclick="goToSlide(2)"></button>
+    </div>
+  </div>
+
   
+  <script>
+    const slides = [
+      { bg: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1600&q=80', sub: 'Outstanding', title: 'Coffee Shop', text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.' },
+      { bg: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600&q=80', sub: 'Outstanding', title: 'Coffee Shop', text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.' },
+      { bg: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1600&q=80', sub: 'Outstanding', title: 'Coffee Shop', text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.' }
+    ];
+
+    let current = 0;
+
+    function goToSlide(i) {
+      current = i;
+      document.getElementById('banner').style.backgroundImage = "url('" + slides[i].bg + "')";
+      document.getElementById('slideSubTitle').textContent = slides[i].sub;
+      document.getElementById('slideTitle').textContent    = slides[i].title;
+      document.getElementById('slideText').textContent     = slides[i].text;
+      document.querySelectorAll('.dot').forEach(function(d, idx) { d.classList.toggle('active', idx === i); });
+    }
+
+    setInterval(function() { goToSlide((current + 1) % slides.length); }, 4000);
+    goToSlide(0);
+
+    document.getElementById('menuToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+
   </body>
   </html>

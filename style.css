@@ -82,6 +82,91 @@ nav {
 .nav-links ul li a:hover,
 .nav-links ul li.active a { color: #f76d37; }
 
+/* BANNER */
+.banner {
+  width: 100%;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.banner-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.52); }
+.banner .container { position: relative; z-index: 2; }
+.banner-content { max-width: 700px; padding: 60px 0; }
+
+.outstanding-text {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 65px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.coffee-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 65px;
+  font-weight: 700;
+  color: #f76d37;
+  line-height: 1;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.banner-text {
+  font-size: 15px;
+  color: #fff;
+  line-height: 26px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  max-width: 560px;
+}
+
+.btn-primary a {
+  display: inline-block;
+  background-color: #f76d37;
+  color: #fff;
+  padding: 12px 35px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary a:hover { background-color: #e05a22; color: #fff; }
+
+.slide-dots {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 3;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s;
+}
+
+.dot.active { background: #f76d37; }
+
+
 /* RESPONSIVE */
 @media (max-width: 992px) {
   .nav-toggler { display: flex; }
