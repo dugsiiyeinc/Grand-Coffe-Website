@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+        
+          font-family: "Poppins", sans-serif;
+}
+
+
+
+
+.Container{
+            width: min(90% , 1120px);
+            margin-inline: auto;
+}
+
+
+
+img{
+    width: 100%;
+}
