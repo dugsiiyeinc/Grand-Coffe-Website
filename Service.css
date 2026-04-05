@@ -32,9 +32,26 @@ img{
 
 
 .back-img{
-            background: linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("https://html.design/demo/grandcoffee/images/services-bg.png") center / cover no-repeat;
+            background: linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://html.design/demo/grandcoffee/images/services-bg.png") center / cover no-repeat;
             height: 100vh;
             background-attachment: fixed;
+}
+
+
+
+.text h1{
+            font-size: 40px;
+            padding-top: 80px;
+            text-align: center;
+}
+
+
+
+.text p{
+            font-size: 16px;
+            text-align: center;
+            font-weight: 400;
+            color: rgb(188, 190, 190);
 }
 
 
@@ -43,15 +60,16 @@ img{
 .Services{
             display: flex;
             gap: 30px;
-            margin-top: 70px;
+            margin-top: 50px;
             margin-inline: 30px;
 }
 
 
 
+
 .service-part{
             background-color: #f76d37;
-            padding: 40px 30px;
+            padding:30px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -59,13 +77,20 @@ img{
             border-radius: 10px;
 }
 
+
+
+
 .service-part img{
     width: 45px;
 }
 
+
+
 #mocha{
     height: 50px;
 }
+
+
 
 
 .service-part h3{
@@ -73,10 +98,40 @@ img{
     padding-top: 30px;
     padding-bottom: 10px;
     text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
 }
+
+
 
 .service-part p{
                 font-size: 15px;
                 text-align: center;
                 padding-bottom: 20px;
+}
+
+
+
+
+.service-part:hover{
+                        background-color: white;
+                        color: black;
+                        cursor: pointer;
+}
+
+
+
+.btn{
+        font-size: 19px;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 5px;
+        font-weight: 540;
+        background-color: #dedddd;
+}
+
+.btn:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
 }
