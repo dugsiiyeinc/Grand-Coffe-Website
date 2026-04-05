@@ -12,7 +12,9 @@
 
 body{
          font-family: "Poppins", sans-serif;
+         color: white;
 }
+
 
 
 .container{
@@ -30,8 +32,51 @@ img{
 
 
 .back-img{
-            background: url("https://html.design/demo/grandcoffee/images/services-bg.png") center / cover no-repeat;
+            background: linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("https://html.design/demo/grandcoffee/images/services-bg.png") center / cover no-repeat;
             height: 100vh;
             background-attachment: fixed;
 }
 
+
+
+
+.Services{
+            display: flex;
+            gap: 30px;
+            margin-top: 70px;
+            margin-inline: 30px;
+}
+
+
+
+.service-part{
+            background-color: #f76d37;
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+}
+
+.service-part img{
+    width: 45px;
+}
+
+#mocha{
+    height: 50px;
+}
+
+
+.service-part h3{
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.service-part p{
+                font-size: 15px;
+                text-align: center;
+                padding-bottom: 20px;
+}
