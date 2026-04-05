@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.80857;
+  overflow-x: hidden;
+  background: #fff;
+}
+
+a { color: #1f1f1f; text-decoration: none; transition: all 0.3s ease-in-out; }
+ul, li, ol { list-style: none; }
+p { font-weight: 300; font-size: 15px; line-height: 24px; }
+img { max-width: 100%; height: auto; display: block; }
+
+.container       { width: 100%; max-width: 1170px; margin: 0 auto; padding: 0 15px; }
+.container-fluid { width: 100%; padding: 0 15px; }
+.layout-padding  { padding: 60px 0; }
+.row             { display: flex; flex-wrap: wrap; margin: 0 -15px; }
+.col-6           { width: 50%; padding: 0 15px; }
+
+/* HEADER */
+.header {
+  width: 100%;
+  background-color: #252525;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo-text {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #e8e3e1;
+  letter-spacing: 1px;
+}
+
+.nav-toggler {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.nav-toggler span { display: block; width: 22px; height: 2px; background: #555; border-radius: 2px; }
+
+.nav-links ul { display: flex; gap: 5px; }
+
+.nav-links ul li a {
+  padding: 8px 14px;
+  font-size: 14px;
+  color: #c1bebe;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links ul li a:hover,
+.nav-links ul li.active a { color: #f76d37; }
+
+/* ABOUT */
+.about { background: #fff; }
+.about-text-wrap { padding: 40px 20px 40px 0; }
+.section-label {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #f76d37;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.about-p { font-size: 15px; color: #4c4c4b; line-height: 26px; margin-bottom: 15px; }
+.about-img { display: flex; align-items: center; height: 100%; min-height: 300px; }
+.about-img img { width: 100%; object-fit: cover; }
+.btn-outline { margin-top: 20px; }
+.btn-outline a {
+  display: inline-block;
+  background-color: #f76d37;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+}
+.btn-outline a:hover { background-color: #e05a22; color: #fff; }
+
+/* FOOTER */
+.footer { background: #252525; padding: 60px 0; }
+.footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+.footer-heading {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+.footer-text { font-size: 14px; color: #999; line-height: 24px; }
+.footer-menu li { padding: 4px 0; }
+.footer-menu li a { color: #999; font-size: 14px; transition: color 0.3s; }
+.footer-menu li a:hover { color: #f76d37; }
+.footer-contact li { padding: 5px 0; }
+.footer-contact li a { color: #999; font-size: 14px; transition: color 0.3s; }
+.footer-contact li a:hover { color: #f76d37; }
+
+/* COPYRIGHT */
+.copyright { background: #fff; padding: 18px 0; border-top: 1px solid #eee; }
+.copyright-text { font-size: 15px; color: #252525; text-align: center; }
+.copyright-text a { color: #252525; }
+.copyright-text a:hover { color: #f76d37; }
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .nav-toggler { display: flex; }
+  .nav-links { width: 100%; display: none; }
+  .nav-links.open { display: block; }
+  .nav-links ul { flex-direction: column; gap: 0; padding: 10px 0; }
+  .nav-links ul li a { display: block; padding: 10px 16px; }
+  .col-6 { width: 100%; }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 576px) {
+  .footer-grid { grid-template-columns: 1fr; }
+}
