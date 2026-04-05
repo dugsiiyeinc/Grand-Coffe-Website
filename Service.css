@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+         font-family: "Poppins", sans-serif;
+         color: white;
+}
+
+
+
+.container{
+            max-width: (90% , 1120px);
+            margin-inline: auto;
+}
+
+
+
+img{
+    width: 100%;
+}
+
+
+
+
+.back-img{
+            background: linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://html.design/demo/grandcoffee/images/services-bg.png") center / cover no-repeat;
+            height: 100vh;
+            background-attachment: fixed;
+}
+
+
+
+.text h1{
+            font-size: 2.5rem;
+            padding-top: 5rem;
+            text-align: center;
+}
+
+
+
+.text p{
+            font-size: 1rem;
+            text-align: center;
+            font-weight: 400;
+            color: rgb(188, 190, 190);
+}
+
+
+
+
+.Services{
+            display: flex;
+            gap: 1.875rem;
+            margin-top: 3.125rem;
+            margin-inline: 1.875rem;
+}
+
+
+
+
+.service-part{
+            background-color: #f76d37;
+            padding:1.875rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0.625rem;
+}
+
+
+
+
+.service-part img{
+    width: 2.8125rem;
+}
+
+
+
+#mocha{
+    height: 3.125rem;
+}
+
+
+
+
+.service-part h3{
+    font-size: 1.25rem;
+    padding-top: 1.875rem;
+    padding-bottom: 0.625rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+
+
+.service-part p{
+                font-size: 0.9375rem;
+                text-align: center;
+                padding-bottom: 1.25rem;
+}
+
+
+
+
+.service-part:hover{
+                        background-color: white;
+                        color: black;
+                        cursor: pointer;
+}
+
+
+
+.btn{
+        font-size: 1.25rem;
+        border: none;
+        padding: 0.3125rem 0.9375rem;
+        border-radius: 0.3125rem;
+        font-weight: 540;
+        background-color: #dedddd;
+}
+
+.btn:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+}
+
+
+
+@media(max-width:768px) {
+
+
+            .Services{
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding-bottom: 3.125rem;
+            }
+
+
+            .back-img{
+                        height: 100%;
+            }
+
+}
