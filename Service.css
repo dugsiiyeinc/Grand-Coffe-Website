@@ -40,15 +40,15 @@ img{
 
 
 .text h1{
-            font-size: 40px;
-            padding-top: 80px;
+            font-size: 2.5rem;
+            padding-top: 5rem;
             text-align: center;
 }
 
 
 
 .text p{
-            font-size: 16px;
+            font-size: 1rem;
             text-align: center;
             font-weight: 400;
             color: rgb(188, 190, 190);
@@ -59,9 +59,9 @@ img{
 
 .Services{
             display: flex;
-            gap: 30px;
-            margin-top: 50px;
-            margin-inline: 30px;
+            gap: 1.875rem;
+            margin-top: 3.125rem;
+            margin-inline: 1.875rem;
 }
 
 
@@ -69,34 +69,34 @@ img{
 
 .service-part{
             background-color: #f76d37;
-            padding:30px;
+            padding:1.875rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            border-radius: 10px;
+            border-radius: 0.625rem;
 }
 
 
 
 
 .service-part img{
-    width: 45px;
+    width: 2.8125rem;
 }
 
 
 
 #mocha{
-    height: 50px;
+    height: 3.125rem;
 }
 
 
 
 
 .service-part h3{
-    font-size: 20px;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    font-size: 1.25rem;
+    padding-top: 1.875rem;
+    padding-bottom: 0.625rem;
     text-align: center;
     color: rgb(0, 0, 0);
     font-weight: 500;
@@ -105,9 +105,9 @@ img{
 
 
 .service-part p{
-                font-size: 15px;
+                font-size: 0.9375rem;
                 text-align: center;
-                padding-bottom: 20px;
+                padding-bottom: 1.25rem;
 }
 
 
@@ -122,10 +122,10 @@ img{
 
 
 .btn{
-        font-size: 19px;
+        font-size: 1.25rem;
         border: none;
-        padding: 5px 15px;
-        border-radius: 5px;
+        padding: 0.3125rem 0.9375rem;
+        border-radius: 0.3125rem;
         font-weight: 540;
         background-color: #dedddd;
 }
@@ -134,4 +134,22 @@ img{
             background-color: black;
             color: white;
             cursor: pointer;
+}
+
+
+
+@media(max-width:768px) {
+
+
+            .Services{
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding-bottom: 3.125rem;
+            }
+
+
+            .back-img{
+                        height: 100%;
+            }
+
 }
