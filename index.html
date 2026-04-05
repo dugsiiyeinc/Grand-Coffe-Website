@@ -4,26 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Grand Coffee</title>
-  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
+
   <!-- HEADER -->
   <div class="header">
     <div class="container-fluid">
       <nav>
-        <a href="#"><span class="logo-text">Grand Coffee</span></a>
+        <a href="index.html"><span class="logo-text">Grand Coffee</span></a>
         <button class="nav-toggler" id="menuToggle">
           <span></span><span></span><span></span>
         </button>
         <div class="nav-links" id="navLinks">
           <ul>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About Us</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact Us</a></li>
@@ -33,7 +31,7 @@
     </div>
   </div>
 
-    <!-- BANNER -->
+  <!-- BANNER -->
   <div class="banner" id="banner">
     <div class="banner-overlay"></div>
     <div class="container">
@@ -44,34 +42,31 @@
         <div class="btn-primary"><a href="#">Learn More</a></div>
       </div>
     </div>
-    <div class="slide-dots" id="slideDots">
+    <div class="slide-dots">
       <button class="dot active" onclick="goToSlide(0)"></button>
       <button class="dot" onclick="goToSlide(1)"></button>
       <button class="dot" onclick="goToSlide(2)"></button>
     </div>
   </div>
 
-  
   <script>
-    const slides = [
-      { bg: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1600&q=80', sub: 'Outstanding', title: 'Coffee Shop', text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.' },
-      { bg: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600&q=80', sub: 'Outstanding', title: 'Coffee Shop', text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.' },
-      { bg: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1600&q=80', sub: 'Outstanding', title: 'Coffee Shop', text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.' }
+    var slides = [
+      { bg: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1600&q=80' },
+      { bg: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600&q=80' },
+      { bg: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1600&q=80' }
     ];
-
-    let current = 0;
+    var current = 0;
 
     function goToSlide(i) {
       current = i;
       document.getElementById('banner').style.backgroundImage = "url('" + slides[i].bg + "')";
-      document.getElementById('slideSubTitle').textContent = slides[i].sub;
-      document.getElementById('slideTitle').textContent    = slides[i].title;
-      document.getElementById('slideText').textContent     = slides[i].text;
-      document.querySelectorAll('.dot').forEach(function(d, idx) { d.classList.toggle('active', idx === i); });
+      document.querySelectorAll('.dot').forEach(function(d, idx) {
+        d.classList.toggle('active', idx === i);
+      });
     }
 
-    setInterval(function() { goToSlide((current + 1) % slides.length); }, 4000);
     goToSlide(0);
+    setInterval(function() { goToSlide((current + 1) % slides.length); }, 4000);
 
     document.getElementById('menuToggle').addEventListener('click', function() {
       document.getElementById('navLinks').classList.toggle('open');
@@ -85,5 +80,5 @@
     });
   </script>
 
-  </body>
-  </html>
+</body>
+</html>
