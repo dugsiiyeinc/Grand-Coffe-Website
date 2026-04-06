@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Gallery</title>
-    <link rel="stylesheet" href="Gallery.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Gallery.css">
 </head>
 <body>
+  <!-- HEADER -->
+  <div class="header">
+    <div class="container-fluid">
+      <nav>
+        <a href="index.html"><span class="logo-text">Grand Coffee</span></a>
+        <button class="nav-toggler" id="menuToggle">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Gallery -->
 
     <div class="gallery layout-padding" id="gallery">
         <div class="container">
@@ -57,6 +81,52 @@
             </div>
         </div>
     </div>
+
+     <!-- FOOTER -->
+  <div class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-heading">About</h3>
+          <p class="footer-text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div>
+          <h3 class="footer-heading">Menu</h3>
+          <ul class="footer-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Useful Link</h3>
+          <p class="footer-text">Adipiscing Elit, sed do Eiusmod Tempor incididunt</p>
+        </div>
+        <div>
+          <h3 class="footer-heading">Contact Us</h3>
+          <ul class="footer-contact">
+            <li><a href="#">Address: Loram Ipusm</a></li>
+            <li><a href="#">Call: +01 1234567890</a></li>
+            <li><a href="#">Email: demo@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container">
+      <p class="copyright-text">2020 All Rights Reserved. Design by <a href="https://html.design">Free HTML Templates</a></p>
+    </div>
+  </div>
+  <script>
+    document.getElementById('menuToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
 
 </body>
 </html>
