@@ -1,114 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-
-*{
-    box-sizing: border-box;
+/* Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-
-body{
-        
-          font-family: "Poppins", sans-serif;
+/* Container */
+.Container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
 
-
-
-
-.Container{
-            width: min(90% , 1120px);
-            margin-inline: auto;
+/* Text Section */
+.text h1 {
+    font-size: 2.5rem;
+    color: #f76d37;
+    margin: 5.625rem 0 1.25rem;
+    text-align: center;
 }
 
-
-
-img{
-    width: 100%;
+.text p {
+    font-size: 1.15rem;
+    color: #636161;
+    text-align: center;
+    margin-bottom: 3.125rem;
+    max-width: 700px;
+    margin-inline: auto;
 }
 
-
-
-.text h1{
-            font-size: 2.5rem;
-            color: #f76d37;
-            margin-top: 5.625rem;
-            margin-bottom: 1.25rem;
-            text-align: center;
-}
-
-
-.text p{
-        font-size: 1.15rem;
-        color: #636161;
-        text-align: center;
-        margin-bottom: 3.125rem;
-}
-
-
-
+/* Images Grid */
 .images {
-            display: grid;
-            grid-template-columns: repeat(3 ,1fr);
-            gap: 0.9375rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.9375rem;
 }
 
-
-.images img{
-                width: 21.875rem;
-                margin-bottom: 0.9375rem;
-                border-radius: 0.25rem;
+/* Images */
+.images img {
+    width: 100%;
+    border-radius: 0.25rem;
 }
 
-#edit-img{
-            height: 20.619375rem;
+/* Equal height fix */
+.edit-img {
+    height: 20.6rem;
+    object-fit: cover;
 }
 
-
-.btn{
-       font-size: 1.5rem;
-      background-color: #252525;
-      color: #ffff;
-      padding: 0.9375rem 1.875rem;
-      margin-bottom: 5.625rem;
-      margin-top: 2.5rem;
-      border-radius: 0.25rem;
-      border: none;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      margin-inline: 29.375rem;
-
+/* Button */
+.btn {
+    font-size: 1.5rem;
+    background-color: #252525;
+    color: #fff;
+    padding: 0.9375rem 1.875rem;
+    margin: 2.5rem auto 5.625rem;
+    border-radius: 0.25rem;
+    border: none;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-
-
-.btn:hover{
+.btn:hover {
     background-color: #f76d37;
-    color: white;
 }
 
+/* ✅ Responsive Design */
+@media (max-width: 992px) {
+    .images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
+@media (max-width: 600px) {
+    .images {
+        grid-template-columns: 1fr;
+    }
 
+    .text h1 {
+        font-size: 2rem;
+    }
 
-@media(max-width:768px) {
-
-
-            .images {
-                    display: flex;
-                    flex-wrap: wrap;
-                   
-                   
-            }
-
-              .images img{
-                             width: 24.375rem;
-                             
-              }
-
-            .btn{
-                margin-inline: 0;
-                margin-left: 7.5rem;
-            }
-
+    .text p {
+        font-size: 1rem;
+    }
 }
