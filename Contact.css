@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+          font-family: 'Poppins', sans-serif;
+}
+
+.back-form{
+            background: url("https://html.design/demo/grandcoffee/images/img-9.png") center / cover no-repeat;
+            height: 90vh;
+            width: 40vw;
+}
+
+
+.Contact h1{
+            font-size: 40px;
+            color: #f76d37;
+            text-align: center;
+            margin-block: 90px;
+}
