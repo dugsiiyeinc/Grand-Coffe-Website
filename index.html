@@ -49,17 +49,95 @@
     </div>
   </div>
 
+  <!-- ABOUT -->
+  <div class="about layout-padding" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="about-text-wrap">
+            <div class="section-label">About Us</div>
+            <p class="about-p">Full cleaning and housekeeping services for companies and households.</p>
+            <p class="about-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. Lorem Ipsum is simply</p>
+            <div class="btn-outline"><a href="about.html">Read More</a></div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="about-img">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80" alt="About Grand Coffee">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Gallery -->
+
+    <div class="gallery layout-padding" id="gallery">
+        <div class="container">
+            <h1 class="section-title">Our Gallery</h1>
+            <p class="section-text">
+                Lorem Ipsum is simply dummy text of printing typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type.
+            </p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&q=80" alt="Gallery 1">
+                    <div class="gallery-overlay">
+                        <div class="gallery-icon">🔍</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&q=80" alt="Gallery 2">
+                    <div class="gallery-overlay">
+                        <div class="gallery-icon">🔍</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.pinimg.com/1200x/ae/e1/c3/aee1c31df10441285e310eb44b1a8f8e.jpg" alt="Gallery 3">
+                    <div class="gallery-overlay">
+                        <div class="gallery-icon">🔍</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504630083234-14187a9df0f5?w=600&q=80" alt="Gallery 4">
+                    <div class="gallery-overlay">
+                        <div class="gallery-icon">🔍</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=80" alt="Gallery 5">
+                    <div class="gallery-overlay">
+                        <div class="gallery-icon">🔍</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1534040385115-33dcb3acba5b?w=600&q=80" alt="Gallery 6">
+                    <div class="gallery-overlay">
+                        <div class="gallery-icon">🔍</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
   <script>
     var slides = [
-      { bg: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1600&q=80' },
-      { bg: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600&q=80' },
-      { bg: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1600&q=80' }
+      { bg: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1600&q=80', sub: 'Outstanding', title: 'Coffee Shop', text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.' },
+      { bg: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600&q=80', sub: 'Outstanding', title: 'Coffee Shop', text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.' },
+      { bg: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1600&q=80', sub: 'Outstanding', title: 'Coffee Shop', text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.' }
     ];
+
     var current = 0;
 
     function goToSlide(i) {
       current = i;
       document.getElementById('banner').style.backgroundImage = "url('" + slides[i].bg + "')";
+      document.getElementById('slideSubTitle').textContent = slides[i].sub;
+      document.getElementById('slideTitle').textContent = slides[i].title;
+      document.getElementById('slideText').textContent = slides[i].text;
       document.querySelectorAll('.dot').forEach(function(d, idx) {
         d.classList.toggle('active', idx === i);
       });

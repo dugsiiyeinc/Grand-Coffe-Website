@@ -16,6 +16,7 @@ ul, li, ol { list-style: none; }
 p { font-weight: 300; font-size: 15px; line-height: 24px; }
 img { max-width: 100%; height: auto; display: block; }
 
+/* LAYOUT */
 .container       { width: 100%; max-width: 1170px; margin: 0 auto; padding: 0 15px; }
 .container-fluid { width: 100%; padding: 0 15px; }
 .layout-padding  { padding: 60px 0; }
@@ -95,7 +96,7 @@ nav {
   font-family: 'Rajdhani', sans-serif;
   font-size: 65px;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -121,21 +122,6 @@ nav {
   max-width: 560px;
 }
 
-.btn-primary a {
-  display: inline-block;
-  background-color: #f76d37;
-  color: #fff;
-  padding: 12px 35px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border-radius: 2px;
-  transition: background-color 0.3s;
-}
-
-.btn-primary a:hover { background-color: #e05a22; color: #fff; }
-
 .slide-dots {
   position: absolute;
   bottom: 25px;
@@ -159,6 +145,129 @@ nav {
 
 .dot.active { background: #f76d37; }
 
+/* BUTTONS */
+.btn-primary a,
+.btn-outline a {
+  display: inline-block;
+  background-color: #f76d37;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary a { padding: 12px 35px; }
+.btn-outline a { padding: 10px 30px; }
+
+.btn-primary a:hover,
+.btn-outline a:hover { background-color: #e05a22; color: #fff; }
+
+.btn-outline { margin-top: 20px; }
+
+/* ABOUT */
+.about { background: #fff; }
+
+.about-text-wrap { padding: 40px 20px 40px 0; }
+
+.section-label {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #f76d37;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.about-p { font-size: 15px; color: #4c4c4b; line-height: 26px; margin-bottom: 15px; }
+
+.about-img { display: flex; align-items: center; height: 100%; min-height: 300px; }
+.about-img img { width: 100%; object-fit: cover; }
+
+
+/* Gallery */
+.section-title {
+    font-size: 2.5rem;
+    color: #f76d37;
+    margin: 5.625rem 0 1.25rem;
+    text-align: center;
+}
+
+.section-text {
+    font-size: 1.15rem;
+    color: #636161;
+    text-align: center;
+    margin-bottom: 3.125rem;
+    max-width: 700px;
+    margin-inline: auto;
+}
+
+/* Images Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.9375rem;
+}
+
+/* Images */
+.gallery-item img {
+    width: 100%;
+    height: 20.6rem; /* Equal height fix */
+    object-fit: cover;
+    border-radius: 0.25rem;
+    display: block;
+}
+
+/* Overlay Styling (Hidden by default) */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-icon {
+    font-size: 2rem;
+    color: white;
+}
+
+/* Button */
+.btn {
+    font-size: 1.5rem;
+    background-color: #252525;
+    color: #fff;
+    padding: 0.9375rem 1.875rem;
+    margin: 2.5rem auto 5.625rem;
+    border-radius: 0.25rem;
+    border: none;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #f76d37;
+}
+
+/* RESPONSIVE */
 /* RESPONSIVE */
 @media (max-width: 992px) {
   .nav-toggler { display: flex; }
@@ -166,9 +275,32 @@ nav {
   .nav-links.open { display: block; }
   .nav-links ul { flex-direction: column; gap: 0; padding: 10px 0; }
   .nav-links ul li a { display: block; padding: 10px 16px; }
+
+  .col-6 { width: 100%; }
+  .about-text-wrap { padding: 20px 0; }
+
+  /* FIXED GALLERY */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-item img {
+    height: 200px;
+  }
 }
 
 @media (max-width: 576px) {
   .outstanding-text, .coffee-title { font-size: 32px; }
   .banner { min-height: 450px; }
+
+  /* FIXED GALLERY */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item img {
+    height: 220px;
+  }
+
+  .btn { font-size: 1.2rem; width: 100%; }
 }
