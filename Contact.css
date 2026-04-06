@@ -41,24 +41,55 @@ body{
 }
 
 
+form input , textarea{
+        border-radius: 10px;
+}
+
+
 .input{
         padding: 20px 40px;
         font-size: 20px;
-         /* color: #757575; */
+        border: none;
+        outline: none;
 }
 
 
 .Area-form{
             font-size: 24px;
-            /* color: #757575; */
             padding: 20px 30px;
-          
-          
-            
+            outline: none; 
+            border: none;    
 }
 
 
 form textarea {
                   font-weight: 300;
                   resize: none;
+}
+
+
+.Map iframe{
+                height: 90vh;
+}
+
+
+.btn{
+        font-size: 16px;
+        border: none;
+        background-color: #d33a11;
+        color: #ffff;
+        padding: 15px 50px;
+        border-radius: 30px;
+        font-weight: 520;
+        margin-top: 50px;
+        margin-left: 170px;
+}
+
+
+
+.btn:hover{
+            background-color: #f76d37;
+            color: rgb(255, 255, 255); 
+            font-weight: 600; 
+            cursor: pointer;  
 }
