@@ -186,193 +186,227 @@ nav {
 .about-img { display: flex; align-items: center; height: 100%; min-height: 300px; }
 .about-img img { width: 100%; object-fit: cover; }
 
-
-/* Gallery */
+/* GALLERY */
 .section-title {
-    font-size: 2.5rem;
-    color: #f76d37;
-    margin: 5.625rem 0 1.25rem;
-    text-align: center;
+  font-size: 2.5rem;
+  color: #f76d37;
+  margin: 5.625rem 0 1.25rem;
+  text-align: center;
 }
 
 .section-text {
-    font-size: 1.15rem;
-    color: #636161;
-    text-align: center;
-    margin-bottom: 3.125rem;
-    max-width: 700px;
-    margin-inline: auto;
+  font-size: 1.15rem;
+  color: #636161;
+  text-align: center;
+  margin-bottom: 3.125rem;
+  max-width: 700px;
+  margin-inline: auto;
 }
 
-/* Images Grid */
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.9375rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.9375rem;
 }
 
-/* Images */
 .gallery-item img {
-    width: 100%;
-    height: 20.6rem; /* Equal height fix */
-    object-fit: cover;
-    border-radius: 0.25rem;
-    display: block;
+  width: 100%;
+  height: 20.6rem;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  display: block;
 }
 
-/* Overlay Styling (Hidden by default) */
 .gallery-item {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .gallery-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: 0.3s;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s;
 }
 
-.gallery-item:hover .gallery-overlay {
-    opacity: 1;
+.gallery-item:hover .gallery-overlay { opacity: 1; }
+.gallery-icon { font-size: 2rem; color: white; }
+
+/* SERVICES */
+.back-img {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("https://html.design/demo/grandcoffee/images/services-bg.png") center / cover no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
 }
 
-.gallery-icon {
-    font-size: 2rem;
-    color: white;
+.text h1 {
+  font-size: 2.5rem;
+  padding-top: 5rem;
+  text-align: center;
 }
 
-/* Button */
+.text p {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 400;
+  color: rgb(188, 190, 190);
+}
+
+.Services {
+  display: flex;
+  gap: 1.875rem;
+  margin-top: 3.125rem;
+  margin-inline: 1.875rem;
+}
+
+.service-part {
+  background-color: #f76d37;
+  padding: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.625rem;
+}
+
+.service-part img { width: 2.8125rem; }
+
+#mocha { height: 3.125rem; }
+
+.service-part h3 {
+  font-size: 1.25rem;
+  padding-top: 1.875rem;
+  padding-bottom: 0.625rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.service-part p {
+  font-size: 0.9375rem;
+  text-align: center;
+  padding-bottom: 1.25rem;
+}
+
+.service-part:hover { background-color: white; color: black; cursor: pointer; }
+
 .btn {
-    font-size: 1.5rem;
-    background-color: #252525;
-    color: #fff;
-    padding: 0.9375rem 1.875rem;
-    margin: 2.5rem auto 5.625rem;
-    border-radius: 0.25rem;
-    border: none;
-    display: block;
-    cursor: pointer;
-    transition: 0.3s;
+  font-size: 1.25rem;
+  border: none;
+  padding: 0.3125rem 0.9375rem;
+  border-radius: 0.3125rem;
+  font-weight: 540;
+  background-color: #dedddd;
 }
 
-.btn:hover {
-    background-color: #f76d37;
+.btn:hover { background-color: black; color: white; cursor: pointer; }
+
+/* CONTACT */
+.Contact { padding: 60px 0; }
+
+.Contact h1 {
+  font-size: 2.5rem;
+  color: #f76d37;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
-/* services */
-
-.back-img{
-            background: linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://html.design/demo/grandcoffee/images/services-bg.png") center / cover no-repeat;
-            height: 100vh;
-            background-attachment: fixed;
+.Contact p {
+  font-size: 1rem;
+  color: rgb(75, 75, 75);
+  margin-bottom: 3rem;
+  text-align: center;
+  max-width: 800px;
+  margin-inline: auto;
 }
 
+.Contact-section { display: flex; }
 
-
-.text h1{
-            font-size: 2.5rem;
-            padding-top: 5rem;
-            text-align: center;
+.back-form {
+  background: url("https://html.design/demo/grandcoffee/images/img-9.png") center / cover no-repeat;
+  height: 90vh;
+  width: 100%;
+  padding: 1.4375rem 4.375rem;
 }
 
-
-
-.text p{
-            font-size: 1rem;
-            text-align: center;
-            font-weight: 400;
-            color: rgb(188, 190, 190);
+.Contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
+form input, textarea { border-radius: 0.625rem; }
 
-
-
-.Services{
-            display: flex;
-            gap: 1.875rem;
-            margin-top: 3.125rem;
-            margin-inline: 1.875rem;
+.input {
+  padding: 1.25rem 2.5rem;
+  font-size: 1.25rem;
+  border: none;
+  outline: none;
 }
 
-
-
-
-.service-part{
-            background-color: #f76d37;
-            padding:1.875rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border-radius: 0.625rem;
+.Area-form {
+  font-size: 1.5rem;
+  padding: 1.25rem 1.875rem;
+  outline: none;
+  border: none;
 }
 
+form textarea { font-weight: 300; resize: none; }
 
+.input:hover, form textarea:hover { outline: 3px solid #fe3e09; }
 
-
-.service-part img{
-    width: 2.8125rem;
+.contact-btn {
+  font-size: 1rem;
+  border: none;
+  background-color: #d33a11;
+  color: #fff;
+  padding: 0.9375rem 3.125rem;
+  border-radius: 1.875rem;
+  font-weight: 520;
+  margin-top: 3.125rem;
+  margin-left: 10.625rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
+.contact-btn:hover { background-color: #f76d37; font-weight: 600; }
 
+.Map iframe { height: 90vh; width: 50vw; }
 
-#mocha{
-    height: 3.125rem;
+/* FOOTER */
+.footer { background: #252525; padding: 60px 0; }
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
 
-
-
-
-.service-part h3{
-    font-size: 1.25rem;
-    padding-top: 1.875rem;
-    padding-bottom: 0.625rem;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-weight: 500;
+.footer-heading {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
+.footer-text { font-size: 14px; color: #999; line-height: 24px; }
 
+.footer-menu li, .footer-contact li { padding: 4px 0; }
+.footer-menu li a, .footer-contact li a { color: #999; font-size: 14px; transition: color 0.3s; }
+.footer-menu li a:hover, .footer-contact li a:hover { color: #f76d37; }
 
-.service-part p{
-                font-size: 0.9375rem;
-                text-align: center;
-                padding-bottom: 1.25rem;
-}
-
-
-
-
-.service-part:hover{
-                        background-color: white;
-                        color: black;
-                        cursor: pointer;
-}
-
-
-
-.btn{
-        font-size: 1.25rem;
-        border: none;
-        padding: 0.3125rem 0.9375rem;
-        border-radius: 0.3125rem;
-        font-weight: 540;
-        background-color: #dedddd;
-}
-
-.btn:hover{
-            background-color: black;
-            color: white;
-            cursor: pointer;
-}
+.copyright { background: #fff; padding: 18px 0; border-top: 1px solid #eee; }
+.copyright-text { font-size: 15px; color: #252525; text-align: center; }
+.copyright-text a { color: #252525; }
+.copyright-text a:hover { color: #f76d37; }
 
 /* RESPONSIVE */
 @media (max-width: 992px) {
@@ -385,39 +419,30 @@ nav {
   .col-6 { width: 100%; }
   .about-text-wrap { padding: 20px 0; }
 
-  /* FIXED GALLERY */
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-item img { height: 200px; }
 
-  .gallery-item img {
-    height: 200px;
-  }
-   .Services{
-                        display: flex;
-                        flex-wrap: wrap;
-                        padding-bottom: 3.125rem;
-            }
+  .Services { display: flex; flex-wrap: wrap; padding-bottom: 3.125rem; }
+  .back-img { height: 100%; }
 
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+}
 
-            .back-img{
-                        height: 100%;
-            }
-
+@media (max-width: 768px) {
+  .Contact-section { flex-wrap: wrap; }
+  .back-form { width: 100%; }
+  .Map iframe { width: 100vw; }
+  .contact-btn { margin: 3.125rem 0 0 4.375rem; }
+  .Contact-form { margin-top: 70px; }
 }
 
 @media (max-width: 576px) {
   .outstanding-text, .coffee-title { font-size: 32px; }
   .banner { min-height: 450px; }
 
-  /* FIXED GALLERY */
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery-item img {
-    height: 220px;
-  }
+  .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-item img { height: 220px; }
 
   .btn { font-size: 1.2rem; width: 100%; }
+  .footer-grid { grid-template-columns: 1fr; }
 }
