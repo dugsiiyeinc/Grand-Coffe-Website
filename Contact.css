@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+          font-family: 'Poppins', sans-serif;
+}
+
+.back-form{
+            background: url("https://html.design/demo/grandcoffee/images/img-9.png") center / cover no-repeat;
+            height: 90vh;
+            width: 100%;
+            padding: 1.4375rem 4.375rem;
+}
+
+
+.Contact h1{
+            font-size: 2.5rem;
+            color: #f76d37;
+            text-align: center;
+            margin-top: 5.625rem;
+            margin-bottom: 25px;
+}
+
+
+
+.Contact p{
+            font-size: 1rem;
+            color: rgb(75, 75, 75); 
+            margin-bottom: 5.625rem;  
+            text-align: center; 
+}
+
+
+.Contact-section{
+                    display: flex;
+}
+
+
+.Contact-form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.25rem;
+}
+
+
+form input , textarea{
+        border-radius: 0.625rem;
+}
+
+
+.input{
+        padding: 1.25rem 2.5rem;
+        font-size: 1.25rem;
+        border: none;
+        outline: none;
+}
+
+
+
+/* .input:hover{
+        outline: 2px solid #d33a11;
+} */
+
+
+.Area-form{
+            font-size: 1.5rem;
+            padding: 1.25rem 1.875rem;
+            outline: none;
+            border: none;    
+}
+
+
+form textarea {
+                  font-weight: 300;
+                  resize: none;
+}
+
+
+
+.input:hover , form textarea:hover{
+        outline: 3px solid #fe3e09;
+}
+
+
+
+
+.btn{
+        font-size: 1rem;
+        border: none;
+        background-color: #d33a11;
+        color: #ffff;
+        padding: 0.9375rem 3.125rem;
+        border-radius: 1.875rem;
+        font-weight: 520;
+        margin-top: 3.125rem;
+        margin-left: 10.625rem;
+        transition: all 0.2s ease;
+}
+
+
+
+.btn:hover{
+            background-color: #f76d37;
+            color: rgb(255, 255, 255); 
+            font-weight: 600; 
+            cursor: pointer;  
+}
+
+
+
+.Map iframe{
+                height: 90vh;
+                width: 50vw;
+}
+
+
+
+
+@media(max-width:768px){
+         
+        .Contact-section{
+                display: flex;
+                flex-wrap: wrap;
+        }
+
+        .back-form{
+                width:100%;
+        }
+
+
+        .Map iframe{
+                       width: 100vw;
+        }
+
+
+        .btn{
+                margin:0;
+                margin-top: 3.125rem;
+                margin-left: 4.375rem;
+        }
+
+
+        .Contact-form{
+                margin-top: 70px;
+        }
+}
