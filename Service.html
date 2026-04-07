@@ -1,54 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service</title>
-    <link rel="stylesheet" href="Service.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Service.css">
 </head>
 <body>
-    
 
-    <section class="back-img">
-
-        <div class="container">
-            
-            <div class="text">
-                <h1>Services</h1>
-                <p>Our café provides a variety of freshly made coffee drinks, including Mocha, espresso, cappuccino, and latte. Customers can also enjoy delicious pastries and snacks in a comfortable and relaxing environment. We focus on quality coffee and friendly service to give every guest a great experience. ☕</p>
-            </div>
-
-            <div class="Services">
-
-                <div class="service-part container">
-                    <img src="https://html.design/demo/grandcoffee/images/icon1.png" alt="icon" id="mocha">
-                    <h3>Mocha coffe</h3>
-                    <p>Mocha coffee is a rich and delicious drink that combines espresso, chocolate, and milk to create a smooth and sweet coffee flavor. 🍫</p>
-                    <button class="btn">Read More</button>
-                </div>
-
-                 <div class="service-part">
-                    <img src="https://html.design/demo/grandcoffee/images/icon3.png" alt="icon">
-                    <h3>Hot Chocolate</h3>
-                    <p>Hot chocolate is a warm and sweet drink made with milk and melted chocolate or cocoa powder, perfect for relaxing and enjoying a rich chocolate flavor. ☕</p>
-                    <button class="btn">Read More</button>
-                </div>
-
-                 <div class="service-part">
-                    <img src="https://html.design/demo/grandcoffee/images/icon2.png" alt="icon">
-                    <h3>Tea Original</h3>
-                    <p>Original tea is a natural and refreshing drink made by brewing tea leaves in hot water, offering a simple and classic taste enjoyed around the world. 🍃</p>
-                    <button class="btn">Read More</button>
-                </div>
-
-            </div>
-
-
-
+  <!-- HEADER -->
+  <div class="header">
+    <div class="container-fluid">
+      <nav>
+        <a href="index.html"><span class="logo-text">Grand Coffee</span></a>
+        <button class="nav-toggler" id="menuToggle">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="Service.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
         </div>
+      </nav>
+    </div>
+  </div>
 
-    </section>
-  
-    
+  <!-- SERVICES -->
+  <section class="back-img">
+    <div class="container">
+      <div class="text">
+        <h1>Services</h1>
+        <p>Our café provides a variety of freshly made coffee drinks, including Mocha, espresso, cappuccino, and latte. Customers can also enjoy delicious pastries and snacks in a comfortable and relaxing environment. We focus on quality coffee and friendly service to give every guest a great experience. ☕</p>
+      </div>
+      <div class="Services">
+        <div class="service-part container">
+          <img src="https://html.design/demo/grandcoffee/images/icon1.png" alt="icon" id="mocha">
+          <h3>Mocha coffe</h3>
+          <p>Mocha coffee is a rich and delicious drink that combines espresso, chocolate, and milk to create a smooth and sweet coffee flavor. 🍫</p>
+          <button class="btn">Read More</button>
+        </div>
+        <div class="service-part">
+          <img src="https://html.design/demo/grandcoffee/images/icon3.png" alt="icon">
+          <h3>Hot Chocolate</h3>
+          <p>Hot chocolate is a warm and sweet drink made with milk and melted chocolate or cocoa powder, perfect for relaxing and enjoying a rich chocolate flavor. ☕</p>
+          <button class="btn">Read More</button>
+        </div>
+        <div class="service-part">
+          <img src="https://html.design/demo/grandcoffee/images/icon2.png" alt="icon">
+          <h3>Tea Original</h3>
+          <p>Original tea is a natural and refreshing drink made by brewing tea leaves in hot water, offering a simple and classic taste enjoyed around the world. 🍃</p>
+          <button class="btn">Read More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-heading">About</h3>
+          <p class="footer-text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div>
+          <h3 class="footer-heading">Menu</h3>
+          <ul class="footer-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="Service.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Useful Link</h3>
+          <p class="footer-text">Adipiscing Elit, sed do Eiusmod Tempor incididunt</p>
+        </div>
+        <div>
+          <h3 class="footer-heading">Contact Us</h3>
+          <ul class="footer-contact">
+            <li><a href="#">Address: Loram Ipusm</a></li>
+            <li><a href="#">Call: +01 1234567890</a></li>
+            <li><a href="#">Email: demo@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <div class="container">
+      <p class="copyright-text">2020 All Rights Reserved. Design by <a href="https://html.design">Free HTML Templates</a></p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('menuToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
+
 </body>
 </html>
