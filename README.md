@@ -29,7 +29,7 @@ Grand Coffee is a welcoming café dedicated to serving high-quality coffee and c
 
 ## 👨‍💻 Development Team
 - Eng. Mohamud Mursal
-- Eng. Abdalla Cise
+- Eng. Abdullahi Nur
 
 ## 📞 Contact
 
